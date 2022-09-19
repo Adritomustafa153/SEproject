@@ -88,6 +88,61 @@
         table th{
             background-color: #efefef;
         }
+        .label{
+	color: orange;
+	margin: 20px 0px;
+	font-size: 24px;
+}
+.btnsb{
+	margin-top: 30px;
+	width: 150px;
+	background-color: #5cb85c;
+	color: white;
+	font-size: 24px;
+	padding: 8px 10px;
+	text-align: center;
+	border: transparent 1px solid;
+	border-radius: 8px; 
+
+}
+.btnsb:hover{
+	background-color: white;
+	color: #4cae4c;
+	border: orange 1px solid;
+	transition: 0.3s;
+	cursor: pointer;
+
+}
+.address, .passwordS{
+	margin: 10px 0px;
+	display: block;
+}
+select {
+    height: 40px;
+    background-color:#87CEEB;
+    border-radius: 8px;
+    width: 300px;
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+}
+input .add {
+  width: 15%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.add {
+    height: 40px;
+    background-color:#87CEEB;
+    border-radius: 8px;
+    width: 300px;
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+}
     </style>
 </head>
 <body>
@@ -186,7 +241,7 @@
                     <option value="Band Box">Bandbox</option>
                     
                 </select>
-                
+                <br>
                 <!-- <span style="margin-right: 20px;"></span> -->
                 
                 <label> Delivery Type</label>
@@ -203,11 +258,11 @@
                     <option value="bkash">bkash</option>
                 </select><br> -->
                 <label >User Address</label>
-                <input name="address" type="text">
-                <button name="submit" type="submit">submit</button>
+                <input name="address" type="text" class="add">
+                <button name="submit" type="submit" class="btnsb">submit</button>
                 <!-- <span style="padding: 20px;"></span> -->
             </form>
-            <a href="shipping.php?total=<?php echo $total ?>">payment</a>
+           <button type="submit" class ="btnsb" style="margin-left:350px"> <a href="shipping.php?total=<?php echo $total ?>">payment</a></button>
            
             </div>
 
