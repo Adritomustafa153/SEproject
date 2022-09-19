@@ -1,0 +1,1 @@
+SELECT c_name,c_contact,d_location FROM `order_data` WHERE pickman_id = 4 AND o_progress = 'pick';//for showing my delivery
